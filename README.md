@@ -51,6 +51,8 @@ The dataset consists of four raw CSV files covering Cyclistic trip data across a
 
 ## 💡 Key Insights & Findings
 
+<img width="1604" height="850" alt="image" src="https://github.com/user-attachments/assets/294a0dee-1d71-4875-a79b-8ce45ad45f03" />
+
 ### 1. Trip Duration Disparity
 * **Casual Riders** take significantly longer trips, averaging **~38.7 minutes** per ride.
 * **Annual Members** take shorter, highly focused trips, averaging **~13.4 minutes** per ride.
