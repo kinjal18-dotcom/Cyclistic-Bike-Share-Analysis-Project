@@ -1,12 +1,12 @@
 # Cyclistic Bike-Share Analysis: Google Data Analytics Capstone Project
 
-Welcome to my portfolio repository for the **Cyclistic Bike-Share Case Study**, completed as the final capstone project for the **Google Data Analytics Professional Certificate**. 
+The **Cyclistic Bike-Share Case Study** has been completed as the final capstone project for the **Google Data Analytics Professional Certificate**. 
 
-This project demonstrates an end-to-end data analysis workflow—from raw data extraction and cross-quarter schema alignment in Google BigQuery to visual storytelling and strategic recommendations in Tableau.
+This project demonstrates an end-to-end data analysis workflow, from raw data extraction and cross-quarter schema alignment in Google BigQuery to visual storytelling and strategic recommendations in Tableau.
 
 ---
 
-## 📌 Project Overview & Business Case
+##  Project Overview & Business Case
 
 ### The Company
 Cyclistic is a fictional bike-share system operating in Chicago with a fleet of over 5,800 bicycles and 600 tracking stations. The service offers standard two-wheel bikes along with inclusive options like hand tricycles and adaptive bicycles. 
@@ -21,15 +21,14 @@ Cyclistic’s finance team concluded that **annual subscribers are significantly
 
 ---
 
-## 🛠️ Tools & Technologies Used
+## Tools Used
 
 * **SQL (Google BigQuery):** BigQuery was used to import, union, standardize, and aggregate over 3.8 million trip records across four separate quarterly datasets for 2019.
 * **Tableau Desktop / Public:** Used to create interactive visualizations and dashboards identifying hourly, daily, and duration patterns.
-* **Markdown / GitHub:** Documentation and portfolio presentation.
 
 ---
 
-## 🔄 Data Cleaning & Processing (Ask, Prepare, Process)
+## Data Cleaning & Processing (Ask, Prepare, Process)
 
 The dataset consists of four raw CSV files covering Cyclistic trip data across all four quarters of 2019 (`DataQ1` through `DataQ4`). 
 
@@ -45,11 +44,11 @@ The dataset consists of four raw CSV files covering Cyclistic trip data across a
    * Filtered out corrupted records: Removed trips with non-positive durations ($\le 0$ seconds), trips lasting longer than 24 hours ($> 86,400$ seconds), and records with missing station details.
    * Engineered analytical features: Calculated `ride_length_minutes`, extracted `day_of_week`, `day_of_week_num`, and `start_hour` to prepare the data for Tableau.
 
-*All SQL logic is preserved in [`sql/cyclistic_full_analysis.sql`](./sql/cyclistic_full_analysis.sql).*
+*SQL Code can be viewed here: [`sql/cyclistic_full_analysis.sql`](./sql/cyclistic_full_analysis.sql).*
 
 ---
 
-## 💡 Key Insights & Findings
+## Key Insights & Findings
 
 <img width="1604" height="850" alt="image" src="https://github.com/user-attachments/assets/294a0dee-1d71-4875-a79b-8ce45ad45f03" />
 
@@ -81,9 +80,6 @@ Based on these insights, here are three actionable, data-backed recommendations 
    * Create a targeted promotion highlighting how much money regular casual users could save on weekday morning commutes.
    * Offer exclusive weekend perks (e.g., free guest passes or priority bike access) for annual subscribers to make memberships more attractive to weekend leisure riders.
 
-3. **In-App Milestones & Conversion Nudges:**
-   * Trigger in-app notifications when a casual rider hits a threshold (e.g., after completing 3+ rides in a month or riding for more than 30 minutes in a single trip), showing them how much they would have saved with an annual membership.
-
 ---
 
 ## 📁 Repository Structure
@@ -91,10 +87,4 @@ Based on these insights, here are three actionable, data-backed recommendations 
 * `README.md` – Executive summary, workflow, and case study documentation.
 * `Cyclistic_Case_Study_Prompt.pdf` – Original case study guidelines provided by Google.
 * `sql/` – Cleaned and standardized BigQuery SQL query scripts.
-* `data/` – Contains raw CSV quarterly data (`DataQ1`–`DataQ4`) and processed aggregated CSV output.
-* `dashboard/` – Tableau workbook files and static dashboard screenshots.
-
----
-
-## 🔗 Live Visualizations
-View the interactive dashboard on **[Tableau Public](YOUR_TABLEAU_PUBLIC_LINK_HERE)**.
+* `data/processed` – Contains processed aggregated CSV output.
